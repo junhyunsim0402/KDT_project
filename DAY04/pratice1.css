@@ -1,0 +1,33 @@
+.title{
+    font-weight: bold;
+    font-size: 40px;
+    font-style: italic;
+    font-family: "궁서";
+}
+.content{
+    color: blue;
+    word-spacing: 10px;
+    letter-spacing: 10px;
+    line-height: 150%;
+    font-weight: bold;
+    font-family: "맑은 고딕";
+}
+.writer1{
+    text-align: center;
+    text-decoration: underline overline line-through;
+    color:red;
+    text-shadow: 2px 2px 5px gray;
+}
+.writer2{
+    text-align: center;
+    text-decoration: underline overline line-through;
+    font-weight: bold;
+    color:red;
+    font-size: 20px;
+}
+.writer3{
+    text-align: center;
+    text-decoration: underline overline line-through;
+    color:red;
+    text-shadow: 2px 2px 5px gray;
+}

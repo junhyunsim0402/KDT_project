@@ -1,0 +1,42 @@
+.title{
+    font-family: "맑은 고딕","굴림";    /*글꼴*/
+    font-size: 40px;                  /*글꼴 크기*/
+    font-weight: bold;                /*글꼴 진하게*/
+    font-style: italic;               /*글꼴 기울기*/
+    color:blanchedalmond;
+    text-align: center;         
+}
+
+/*
+외부 폰트:제목같이 꾸밀때 사용
+1.영문:구글 폰트
+2.한글 폰트:눈누(사이트) 폰트
+*/
+@font-face {
+    font-family: 'OngleipParkDahyeon';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+.content{
+    font-family: 'OngleipParkDahyeon';
+    color: purple; /*글자 색상 */
+    word-spacing: 10px; /*단어 간격:어간 */
+    letter-spacing: 10px; /*글자 간격:자간 */
+    line-height: 150%; /*줄 간격:백분율 */
+}
+.writer{
+    text-align: right; /*마크업 안에 있는 content내용물을 가로 정렬(left, center, right) */
+    text-decoration: underline overline line-through; 
+    /*밑줄(underline) 윗줄(overline) line-through(취소선 가격 할일할때나 그럴떄 많이씀) 긋기*/
+    text-shadow: -100px 50px 10px gray; 
+    /*텍스트 그림자:
+    x축(양수면 오른쪽 음수면 왼쪽
+    y축 양수면 아래쪽 음수면 위쪽 
+    흐림 정도(숫자 클수록 많이 흐려짐)
+    그림자의 색->gray로 흐리게 많이 씀
+    */
+    color: green;   /*방법1:색깔 정하기*/
+    color: rgb(140,200,100); /*방법2:색깔 섞기*/
+    color: #000000 ; /*방법3:헥사코드(6자릿수로 16진수코드*/
+}
