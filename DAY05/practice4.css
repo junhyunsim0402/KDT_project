@@ -1,3 +1,46 @@
-.로그인{
+*{
     text-align: center;
+}
+.로그인화면{
+    padding-top: 40px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 1px 1px 3px red;
+}
+.사용자아이디{
+    padding-bottom: 10px;
+}
+.id{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+    text-align: left;
+    padding-left: 7px;
+    border: 1px solid;
+}
+.password{
+    padding-left: 7px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+    text-align: left;
+    border: 1px solid;
+}
+button{
+    color: white;
+    background-color: blue;
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    height: 40px;
+}
+.로그인버튼{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.계정없으면회원가입{
+    padding-bottom: 20px;
+}
+.밑줄{
+    text-decoration: none;
 }

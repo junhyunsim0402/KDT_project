@@ -9,3 +9,16 @@
 // console.log(`${result}:${result2}:${result3}`);
 
 //문제2
+let sth=Number(prompt());
+let stm=Number(prompt());
+let eth=Number(prompt());
+let etm=Number(prompt());
+let stm1=sth*60+stm;
+let etm1=eth*60+etm;
+let minus=etm1-stm1;
+let re=parseInt((minus-30)/10)
+re=(minus-30)%10>0 ? re+1 : re;
+let result=re>0 && re<37 ? `${2000+re*500}` : re<0 ? 
+`${2000}` : re>=37 ? `${20000}` : `false`
+result=sth>=22 ? `${result*0.8}(심야)` : result;
+console.log(result);
