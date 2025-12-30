@@ -1,0 +1,30 @@
+/*
+inline->span사용
+*/
+
+*{
+    border: solid 1px red;
+    margin: 10px;
+}
+.s1{
+    /*표시 방법*/
+    display: inline;
+
+    /*사이즈는 적용 불가능
+    width 100px; height:100px; 
+    /*(왼/오른쪽) 안쪽/바깥쪽 여백만 가능*/
+    padding:20px; margin:20px;
+}
+.s2{
+    display: block; /*div처럼 사용되지만 기본값 차이가 있음*/
+    width:100px;height: 100px; /*사이즈 적용가능*/
+    padding:20px; margin:20px; /*안쪽/바깥쪽 여백 가능*/
+}
+.s3{
+    display: inline-block; /*같은 줄에 있으면서 사이즈/여백 조절 가능*/
+    width: 100px; height: 100px;
+    padding: 20px; margin: 20px;
+}
+.s4{
+    display: none;  /*content내용을 없애겠다*/
+}
