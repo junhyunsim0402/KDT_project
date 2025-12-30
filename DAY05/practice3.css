@@ -1,10 +1,22 @@
+.제목{
+    font-weight: bold;
+}
 .사진{
     width: 400px; height: 200px;
 }
 .오랜지색상{
     color: orange;
     font-size: 30px;
+    display: inline;
+    margin-right: 5px;
 }
 .내용{
-    background-color: green;
+    background-color: #0f6978;
+    width: 400px;
+    padding: 23px 20px;
+    margin: 20px 0px;
+    color: white;
+}
+.콘텐츠오랜지{
+    color: orange;
 }
