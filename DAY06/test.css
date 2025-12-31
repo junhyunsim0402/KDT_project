@@ -1,0 +1,56 @@
+.box{
+    border: 1px solid red;
+    width: 100px; padding: 10px;
+}
+.flexbox1{
+    display: flex; /*하위 요소에 대해 가로로 정렬*/
+    border: 1px solid blue;
+    width: 250px; /*자식들이 100px가 3개인데 부모가 200px으로 부족한만큼 채워짐*/
+    flex-wrap: nowrap; /*nowrap 기본값:하위 요소가 넘치면 자동으로 하위요소들 크기조정*/
+}
+.flexbox2{
+    display: flex; /*하위 요소에 대해 가로로 정렬*/
+    border: 1px solid blue;
+    width: 250px; /*자식들이 100px가 3개인데 부모가 200px으로 부족한만큼 채워짐*/
+    display:flex;flex-wrap: wrap; /*wrap:하위 요소가 넘치면 자동 줄바꿈*/
+}
+.flexbox3{
+    display: flex; /*하위 요소에 대해 가로로 정렬*/
+    border: 1px solid blue;
+    flex-direction: row; /*row(기본값)하위요소 가로배치*/
+}
+.flexbox4{
+    display: flex; /*하위 요소에 대해 가로로 정렬*/
+    border: 1px solid blue;
+    flex-direction: column; /*column 하위요소 세로배치*/
+}
+.flexbox5{
+    display: flex; /*하위 요소에 대해 가로로 정렬*/
+    border: 1px solid blue;
+    justify-content: flex-start; /**/
+}
+.flexbox6{
+    display: flex; /*하위 요소에 대해 가로로 정렬*/
+    border: 1px solid blue;
+    justify-content: flex-end; /**/
+}
+.flexbox7{
+    display: flex; /*하위 요소에 대해 가로로 정렬*/
+    border: 1px solid blue;
+    justify-content: center; /**/
+}
+.flexbox8{
+    display: flex; /*하위 요소에 대해 가로로 정렬*/
+    border: 1px solid blue;
+    justify-content: space-between; /*양끝의 사이 여백없이 중간을 균등하게 여백을 넣음*/
+}
+.flexbox9{
+    display: flex; /*하위 요소에 대해 가로로 정렬*/
+    border: 1px solid blue;
+    justify-content: space-around; /*사이 여백을 100%면 양끝 여백을 50%을 넣는다*/
+}
+.flexbox10{
+    display: flex; /*하위 요소에 대해 가로로 정렬*/
+    border: 1px solid blue;
+    justify-content: space-evenly;  /*모든 여백을 균등하게 분배*/
+}

@@ -1,0 +1,54 @@
+.전체화면 {
+    border: 1px solid #eeeeee;
+    width: 300px;
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+.사진영역 {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.사진영역 img {
+    width: 290px;
+}
+
+.내용 {
+    padding: 20px;
+}
+
+.판매제목 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.가격 {
+    font-size: 16px;
+    font-weight: 800; 
+    padding: 15px 0;
+}
+
+.판매내용 {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.리뷰및평점 {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.노란색 {
+    color: orange;
+    font-weight: bold;
+}
+
+.구분선 {
+    margin: 0 5px;
+}

@@ -20,12 +20,30 @@
 
 
 //문제 2
-let carNumberList=[`12가3456`];
-let useTimeList=[45,130,320];
-let k=prompt("차량 번호를 입력하세요");
-let result=useTimeList.indexOf(k);
-if (result!==-1){
-    
-}else{
-    console.log("존재하지 않는 차량입니다");
-}
+// let carNumberList=[`12가3456`,`34나7890`,`56다1234`];
+// let useTimeList=[45,130,320];
+// let k=prompt("차량 번호를 입력하세요");
+// let result=carNumberList.indexOf(k);
+// let usemin=parseInt((useTimeList[result]-60)/30);
+// if ((useTimeList[result]-60)%30>0){
+//     usemin+=1;
+// }else{
+//     usemin+=0;
+// }
+// let re=0
+// if (result!==-1){
+//     if (useTimeList[result]<=0){
+//         console.log("잘못된 사용 시간입니다.");
+//     }else if (useTimeList[result]<=60){
+//         re=1000;
+//         console.log(re);
+//     }else if(useTimeList[result]<=600){
+//         re=1000+500*usemin;
+//         console.log(re);
+//     }else{
+//         re=10000;
+//         console.log(re);
+//     }
+// }else{
+//     console.log("존재하지 않는 차량입니다");
+// }

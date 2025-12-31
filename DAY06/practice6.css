@@ -1,0 +1,56 @@
+body {
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.전체화면 {
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+}
+
+.짱구칸 {
+    background-color: pink;
+    border-radius: 50px;   
+    display: inline-block; 
+    margin-bottom: 30px;
+    border: 3px solid white;
+    width: 280px;
+}
+
+.짱구칸 h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: black;
+}
+
+.사진 .짱구 {
+    width: 300px;       
+    height: 300px;
+    border-radius: 200px;  
+    margin-bottom: 20px;
+}
+
+.내용 {
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;   
+}
+
+.button {
+    background-color: skyblue;
+    color: white;     
+    border: none;  
+    padding: 15px 0;      
+    border-radius: 10px;   
+    font-size: 16px;
+    font-weight: bold;
+    width: 280px;
+}
