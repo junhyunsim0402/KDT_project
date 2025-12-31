@@ -107,5 +107,5 @@
 //     courseList.splice(result,1);
 //     console.log(`${courseList}`);
 // }else{
-//     console.log("존재하지 않는 과목입니다");
+//     console.log("해당 과목은 신청 목록에 없습니다");
 // }
