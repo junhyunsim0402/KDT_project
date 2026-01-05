@@ -1,0 +1,98 @@
+/*공통 css이면서 관례적인 기본*/
+*{
+    box-sizing: content-box; /*contnet+padding+border*/
+    font-family: 굴림 나눔고딕;
+    font-size: 12px;
+    padding: 0px;
+    margin: 0px;
+}
+a{
+    /*a마크업 기본 css제거*/
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style-type: none; /*목록 글머리 제거*/
+}
+/*헤더*/
+#헤더{
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+#헤더 .top-menu{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+}
+#헤더 .top-menu li a{
+    margin-left: 5px;
+}
+#헤더 .main-menu{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+#헤더 .main-menu li a{
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*대표이미지*/
+#img2{
+}
+/*본문*/
+#main{
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 20px auto;
+}
+#sidebar{
+    width: 220px;
+
+}
+#sidebar > h3{
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+#sidebar >ol > li{
+    padding: 10px;
+    border-bottom: 1px solid #eeeeee;
+}
+#content{
+    width: 1030px;
+    margin-left: 30px;
+}
+#content > h3{
+    font-size: 20px;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+#content > img{
+    display: block;
+    margin: 0 auto;
+}
+/*푸터*/
+#footer{
+    display: flex;
+    background-color: black;
+}
+#footer{
+    background-color: #2c2a29;
+    color: white;
+    padding: 15px 0;
+    width: 100%;
+}
+#footer-inner{
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
+}

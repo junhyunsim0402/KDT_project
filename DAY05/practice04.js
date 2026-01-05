@@ -76,6 +76,11 @@
 // let numlist=[num1,num2,num3];
 // numlist.sort((a,b)=>a-b);
 // console.log(`${numlist}`);
+//          or
+// if( num1>num2){let temp=num1; num1=num2; num2=temp;}
+// if( num1>num3){let temp=num1; num1=num3; num3=temp;}
+// if( num2>num3){let temp=num2; num2=num3; num3=temp;}
+// console.log(`${num1},${num2},${num3}`);
 
 // 문제8
 // let num1=Number(prompt("0(가위) 1(바위) 2(보)"));
