@@ -38,30 +38,32 @@ let itemList = ['삼각김밥', '바나나우유', '컵라면', '샌드위치'];
 let priceList = [1200, 1500, 1800, 2500];
 let stockList = [3, 0, 5, 2];
 let result=0;
-let sale="";
 while (true) {
-    let user = (prompt("구매하고 싶은 상품명"));
+    let user = prompt("구매하고 싶은 상품명, 그만 구매하실거면 그만");
     let index = itemList.indexOf(user);
     if(user=="그만"){
         console.log(`총 결제 금액: ${result}원`);
         break;
     }
+    let user2=Number(prompt(`몇개 구매하시겠습니까? 남은 재고:${stockList[itemList.indexOf(user)]}`));
+    let user3=prompt("통신사 할인 받으시겠습니까?(예or아니요");
     if (index !== -1) {
-        if(stockList[index]==0){
+        if(stockList[index]-user2>=0){
+            if(user3=="예"){
+                result+=priceList[index]*user2*0.9;
+                stockList[index]-=user2;
+            }else if(user3=="아니요"){
+                result+=priceList[index]*user2;
+                stockList[index]-=user2;
+            }else{
+                console.log("잘못된 입력입니다.");
+                continue;
+            }
+        }else{
             console.log("죄송합니다. 해당 상품은 품절되었습니다.");
-        }else{
-            sale=(prompt("할인 받으시겠습니까?(예or아니요)"));
+            continue;
         }
-        if (sale=="예"){
-            result+=priceList[index]*0.9;
-            stockList[index]-=1;
-        }else if(sale=="아니요"){
-            reuslt+=priceList[index];
-            stockList[index]-=1;
-        }else{
-            console.log("잘못된 입력입니다");
-        }
-    } else {
+    }else {
         console.log("존재하지 않는 상품입니다");
     }
 }
