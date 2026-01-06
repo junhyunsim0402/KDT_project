@@ -1,0 +1,58 @@
+.wrap{
+    background-color: red;
+    width: 1280px;
+    height: 580px;
+    position: relative;
+}
+
+.box,.box1,.box2,.box3,.box4,.box5{
+    position: absolute;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.box{
+    top: 100px;
+    left: 590px;
+    width: 100px;
+    height: 60px;
+}
+
+.box1{
+    top: 160px;
+    left: 400px;
+    width: 100px;
+    height: 60px;
+}
+
+.box2{
+    top: 160px;
+    left: 780px;
+    width: 100px;
+    height: 60px;
+}
+
+.box3{
+    left:400px;
+    width: 100px;
+    height: 60px;
+    top:360px;
+}
+
+.box4{
+    top:360px;
+    left:780px;
+    width: 100px;
+    height: 60px;
+}
+
+.box5{
+    width: 100px;
+    height: 60px;
+    top:420px;
+    left: 590px;
+}

@@ -1,0 +1,55 @@
+.wrap{
+    background-color: #f4f4f4;
+    width: 1280px;
+    height: 600px;
+    position: relative;
+}
+.button{
+    position: absolute;
+    border-radius: 100px;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 440px;
+    left: 1100px;
+}
+.add-menu{
+    color: white;
+    font-size: 40px;
+}
+.menu{
+    display: none;
+    position: absolute;
+}
+.button1,.button2,.button3,.button4{
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    left: 1110px;
+    position: absolute;
+}
+.wrap:hover .menu{
+    display: block;
+}
+.button1{
+    background-color: #e7f0ff;
+    top: 110px;
+}
+.button2{
+    background-color: #e9fff0;
+    top: 190px;
+}
+.button3{
+    background-color: #fff2e9;
+    top: 270px;
+}
+.button4{
+    background-color: #f3e9ff;
+    top: 350px;
+}

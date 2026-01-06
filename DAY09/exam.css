@@ -1,0 +1,51 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid red;
+}
+
+.box2{/*
+    position: static;   =>    기본값(생략가능)*/
+    left: 50px; /*위치 이동 불가*/
+}
+
+.box3{
+    position: relative; /*본래 위치로 부터 상대 위치 변경 가능*/
+    top: 10px;
+    left: 10px;
+}
+
+.box4{
+    position: absolute; /*가장 가까운 (상위요소)의 position 기준 절대위치*/
+    top:10px;
+    left:200px; 
+}
+
+.box5{
+    position: fixed; /*디바이스(크롬)의 화면 위치 고정*/
+    bottom:100px;
+    right:50px; 
+}
+
+.parent{
+    position:relative;
+    border: 2px solid blue;
+}   
+.box6{
+    top:50px; left:200px;
+    position:absolute;      /*부모내에서 위치 이동 가능*/
+}
+
+#header{
+    display: flex;
+    background-color: beige;
+    position: sticky; /*만일 화면에서 벗어나면 위치 고정*/
+    top:0px;
+    z-index: 5;    /*겹침 우선순위 설정 순위가 낮을수록 겹치면 */
+    /*
+    opacity: 0.5;  투명도*/
+}
+#header > ul{
+    display: flex;
+}
