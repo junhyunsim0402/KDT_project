@@ -13,24 +13,52 @@
 // prompt를 세 번 사용하여 사용자로부터 '아이디', '비밀번호', '이름'을 순서대로 입력받습니다.
 // 입력받은 정보로 하나의 member 객체를 생성하고, members 배열에 저장하여 배열을 콘솔에 출력하시오.
 // 단] 입력받은 아이디가 이미 배열에 존재하면 '존재하는 아이디 입니다'를 출력하고 배열에 등록하지 않습니다.
-const members = [
-    { id: 'user1', password: 'pass1', name: '사용자1' },
-    { id: 'user2', password: 'pass2', name: '사용자2' },
-];
-for(let i=0;i<members.length;i++){
-  members[i].id=prompt("아이디");
-  members[i].password=prompt("비밀번호");
-  members[i].name=prompt("이름");
-}
-for(let i=0;i<members.length;i++){
-  for(let j=i+1;j<members.length;j++){
-    if(members[i].id==members[j].id){
-    console.log("존재하는 아이디 입니다");
-    break;
-    }
-  }
-}
-if(members[])
+// const members = [
+//   { id: 'user1', password: 'pass1', name: '사용자1' },
+//   { id: 'user2', password: 'pass2', name: '사용자2' },
+// ];
+// const member=[];
+// for (let i = 0; i < members.length; i++) {
+//   members[i].id = prompt("아이디");
+//   members[i].password = prompt("비밀번호");
+//   members[i].name = prompt("이름");
+//   member.push(members[i]);
+// }
+// for (let i = 0; i < member.length; i++) {
+//   for (let j = i + 1; j < members.length; j++) {
+//     if (members[i].id == member[j].id) {
+//       console.log("존재하는 아이디 입니다");
+//       break;
+//     }else{
+//       console.log(member);
+//     }
+//   }
+// }        or
+// let 아이디=prompt("아이디");
+// let 비밀번호=prompt("비밀번호");
+// let 이름=prompt("이름");
+// let member={
+//   id:아이디,
+//   password:비밀번호,
+//   name:이름
+// };
+// let fine=false;
+// for(let i=0;i<members.length;i++){
+//   let m=members[i];     //index 회원정보 꺼내기
+//   if(m.id==member.id){  //만약 index번쨰 회원정보의 아이디가 입력받은 아이디와 같으면
+//     console.log("존재하는 아이디 입니다"); //불가능
+//     fine=true;          //찾았다고 기록
+//     break;              //반복문 탈출
+//   }
+// }
+// if(find==false){    //중복이 없으면
+//   members.push(member); //배열저장
+//   console.log(members);
+// }else{
+//   console.log("존재x")
+// }
+
+
 
 // 문제 3: 객체 배열의 속성 값 평균 구하기
 // scores 배열에 담긴 모든 학생의 수학(math) 점수 평균을 계산하여 콘솔에 출력하시오.
@@ -179,11 +207,25 @@ if(members[])
 //   { title: '유미의 세포들', rating: 9.9 },
 //   { title: '전지적 독자 시점', rating: 9.7 }
 // ];
-/* HTML 출력 예시:
-   나 혼자만 레벨업 ★★★★★★★★★☆
-   유미의 세포들 ★★★★★★★★★☆
-   전지적 독자 시점 ★★★★★★★★★☆
-*/
+// /* HTML 출력 예시:
+//    나 혼자만 레벨업 ★★★★★★★★★☆
+//    유미의 세포들 ★★★★★★★★★☆
+//    전지적 독자 시점 ★★★★★★★★★☆
+// */
+// let scores=``;
+// let html=``;
+// for(let i=0;i<webtoons.length;i++){
+//   scores=webtoons[i].rating;
+//   let st1=parseInt(scores/1);
+//   let st2=10-st1;
+//   html+=webtoons[i].title;
+//   html+=`★`.repeat(st1);
+//   html+=`☆`.repeat(st2);
+//   html+=`<br>`
+// } 
+// document.write(html);
+
+
 
 // 문제11 : 공공데이터 포털 : 인천 부평구 맛집 현황 테이블 만들기
 // [구현 조건]
@@ -201,3 +243,24 @@ if(members[])
 //   5. 인증키 설정 ( Encoding , Decoding 순서대로 대입하여 설정 )
 //   6. 인증키 설정 후 'API 목록' 에서  [Open Api 호출] 합니다.
 //   7. **실행 결과(JSON)**를 전체 복사합니다.  
+// let response={"currentCount":10,"data":[{"소재지":"인천광역시 부평구 안남로417번길 20, 2층 (청천동)","업소명":"1982삼계정","업태":"한식","연번":1,"전화번호":"032-512-1982","지정메뉴":"녹두삼계탕"},{"소재지":"인천광역시 부평구 부평대로 301 (청천동,남광센트렉스 111호)","업소명":"갈비가","업태":"한식","연번":2,"전화번호":"032-363-3787","지정메뉴":"속초코다리냉면"},{"소재지":"인천광역시 부평구 평천로553,1층(삼산동)","업소명":"경복궁삼계탕","업태":"한식","연번":3,"전화번호":"032-511-1494","지정메뉴":"들깨삼계탕"},{"소재지":"인천광역시 부평구 부평대로63번길10-11(부평동)","업소명":"금강산추어탕","업태":"한식","연번":4,"전화번호":"032-527-8118","지정메뉴":"추어탕"},{"소재지":"인천광역시 부평구 부평대로87번길 4(부평동)","업소명":"뉴욕반점","업태":"중식","연번":5,"전화번호":"032-516-4488","지정메뉴":"삼선짬뽕,찹쌀탕수육"},{"소재지":"인천광역시 부평구 신트리로22번길 15-14 (부평동, 1층 일부)","업소명":"더히든키친","업태":"양식","연번":6,"전화번호":"032-272-7276","지정메뉴":"바질페스토파스타"},{"소재지":"인천광역시 부평구 마장로 402(청천동)","업소명":"덕수갈비","업태":"한식","연번":7,"전화번호":"032-517-4070","지정메뉴":"왕갈비탕"},{"소재지":"인천광역시 부평구 대정로 93, 웰링턴 1층 103호 (부평동)","업소명":"동강해물탕","업태":"한식","연번":8,"전화번호":"032-524-9166","지정메뉴":"해물탕"},{"소재지":"인천광역시 부평구 백범로468번길45(십정동)","업소명":"동암아구해물탕","업태":"한식","연번":9,"전화번호":"032-435-0233","지정메뉴":"해물찜,해물탕"},{"소재지":"인천광역시 부평구 부흥로257-7(부평동)","업소명":"들내음 들깨칼국수","업태":"한식","연번":10,"전화번호":"032-515-4151","지정메뉴":"팥칼국수"}],"matchCount":67,"page":1,"perPage":10,"totalCount":67}
+// let html = `<table>`;
+// let data=response.data;
+// html+=`<tr>`;
+// let title=Object.keys(data[0]);
+// for(let i=0;i<title.length;i++){
+//   html+=`<td>${title[i]}</td>`
+// }
+// html+=`</tr>`;
+// for (let i=0;i<data.length;i++){
+//     html+=`<tr>
+//       <td>${data[i].소재지}</td>
+//       <td>${data[i].업소명}</td>
+//       <td>${data[i].업태}</td>
+//       <td>${data[i].연번}</td>
+//       <td>${data[i].전화번호}</td>
+//       <td>${data[i].지정메뉴}</td>
+//     </tr>`;
+// }
+// html+=`</table>`;
+// document.write(html);
