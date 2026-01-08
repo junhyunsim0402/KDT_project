@@ -1,0 +1,38 @@
+.basicTable{
+    width: 500px;
+    border: 1px solid red;
+}
+.basicTable th, .basicTable td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.basicTable td:nth-child(1){    
+    background-color: aqua;
+}                               /*형제 선택자: 행마다의 n번째 선택*/
+.basicTable td:nth-child(2){
+    background-color: yellow;
+    text-align: center;
+}
+
+/*속성 선택자:선택자[속성명]*/
+.basicTable td[colspan]{
+    text-align: right;
+}
+
+.styleTable{
+    width: 700px;
+    border-collapse: collapse;/*이중 테두리를 하나의 테두리로 병합*/
+}
+.styleTable th, .styleTable td{
+    border: 1px solid black;
+    padding: 5px;
+}
+.styleTable > tbody > tr:nth-of-type(odd){
+    background-color: #eeeeee;
+}
+
+.styleTable >tbody > tr:hover{
+    background-color: blue;
+    color: white;
+}

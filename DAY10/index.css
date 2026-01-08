@@ -1,0 +1,318 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+body {
+    display: block;
+}
+
+#wrap {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 10px 0;
+}
+
+.header-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.header-menu li {
+    padding: 0 10px;
+    font-size: 11px;
+    border-right: 1px solid #dbdbdb;
+}
+
+.header-menu li:last-child {
+    border-right: none;
+}
+
+.header-menu a {
+    color: #666;
+}
+
+.logo-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-bottom: 1px solid #000;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    position: relative;
+    padding: 0 12px;
+}
+
+.menu li a {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    padding: 10px 0;
+}
+
+.menu .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    list-style: none;
+    min-width: 100px;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.menu ul li:hover .submenu {
+    display: block;
+}
+
+.menu .submenu li {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.menu .submenu li a {
+    font-size: 12px;
+    font-weight: normal;
+    color: #666;
+    padding: 8px 10px;
+}
+
+.menu .submenu li a:hover {
+    background-color: #f5f5f5;
+    color: #000;
+}
+
+.underline {
+    display: flex;
+    align-items: center;
+}
+
+.oneplus {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+    margin-right: 15px;
+}
+
+.serch {
+    border-bottom: 1px solid black;
+}
+
+.serch img {
+    width: 20px;
+}
+
+#main {
+    width: 100%;
+}
+
+.main-img img {
+    width: 100%;
+    display: block;
+}
+
+.main-text {
+    padding: 60px 0;
+    text-align: center;
+}
+
+h3 {
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+}
+
+.content {
+    font-size: 10px;
+    color: #999999;
+    margin: 20px 0;
+}
+
+.itemimg {
+    width: 380px;
+}
+
+#footer {
+    width: 100%;
+    background-color: #f7f7f7;
+    border-top: 1px solid #dbdbdb;
+    padding: 60px 0 40px 0;
+}
+
+.footer-inner {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 40px;
+}
+
+.footer-content > div {
+    width: 23%;
+    font-size: 12px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.footer-content h3 {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-content h4 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.footer-menu {
+    list-style: none;
+}
+
+.footer-menu li {
+    margin-bottom: 5px;
+}
+
+.footer-menu a {
+    color: #333;
+}
+
+.footer-bottom {
+    border-top: 1px solid #dbdbdb;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 11px;
+    color: #999;
+}
+
+#items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#items > .item {
+    width: 380px;
+    margin: 30px 0px;
+}
+
+#items > .item > .item-img {
+    width: 100%;
+}
+
+#items .colorReview {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0px;
+}
+
+#items .color > span {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border: 1px solid #dbdbdb;
+}
+.menu .red a{
+    color: red;
+}
+#items .review {
+    color: #999999;
+}
+
+#items .itemName {
+    margin: 5px 0px;
+}
+
+#items .itemName > .size {
+    font-size: 10px;
+    color: #999999;
+    margin: 1px 0px;
+}
+
+#items .itemPrice {
+    position: relative;
+    margin: 5px 0px;
+}
+
+#items .price {
+    text-decoration: line-through;
+    color: #999999;
+}
+
+#items .disc {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
+}
+
+#quick-menu {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    z-index: 999;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+}
+
+#quick-menu ul {
+    list-style: none;
+}
+
+#quick-menu li {
+    width: 50px;
+    height: 50px;
+    border-bottom: 1px solid #dbdbdb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#quick-menu img {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+#quick-menu a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
