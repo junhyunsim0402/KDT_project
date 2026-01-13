@@ -87,15 +87,15 @@ const students = [ { name: '김철수', score: 85 }, { name: '이영희', score:
 각 상품을 소개하는 HTML 요소를 동적으로 만들어 페이지에 표시하는 renderProducts 함수를 만드세요. 
 각 상품은 이름(<h4>), 가격(<p>), 재고(<p>)를 포함한 div로 묶여야 합니다. 
 const products = [ { name: '노트북', price: 1200000, stock: 5 }, { name: '모니터', price: 350000, stock: 12 }, { name: '키보드', price: 80000, stock: 25 } ]; */
-// html=``;
-// function renderProducts(products){
-//     for(let i=0;i<products.length;i++){
-//         html+=`<div><h4>상품 이름:${products[i].name}</h4><p>가격 : ${products[i].price}, 재고:${products[i].stock}</p></div>`;
-//     }
-// }
-// const products = [ { name: '노트북', price: 1200000, stock: 5 }, { name: '모니터', price: 350000, stock: 12 }, { name: '키보드', price: 80000, stock: 25 } ];
-// renderProducts(products);
-// document.write(html);
+html=``;
+function renderProducts(products){
+    for(let i=0;i<products.length;i++){
+        html+=`<div><h4>상품 이름:${products[i].name}</h4><p>가격 : ${products[i].price}, 재고:${products[i].stock}</p></div>`;
+    }
+}
+const products = [ { name: '노트북', price: 1200000, stock: 5 }, { name: '모니터', price: 350000, stock: 12 }, { name: '키보드', price: 80000, stock: 25 } ];
+renderProducts(products);
+document.write(html);
 
 /* 실습 7: 
 간단한 계산기 num1, num2, operator ('+', '-') 세 개의 매개변수를 받는 calculator 함수를 만드시오. 
@@ -138,3 +138,11 @@ HTML 리스트(ul, li) 동적 생성 todoList라는 할 일 목록이 담긴 전
 // }
 // let result=getTicketPrice(Number(prompt("나이를 입력하세요")));
 // console.log(result);
+
+// [결론]:변수=하나의 값/자료 저장
+//          -전역변수:{}에서 선언 안됨
+//          -지역변수:{}에서 선언 됨
+//          -매개변수:인자값을 저장
+//          
+//          변수의 종류 분류 시점:선언
+//          -선언:let/const/function 키워드가 작성된 위치/
