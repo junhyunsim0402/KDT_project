@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OwnerCode - 자영업자 커뮤니티</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo-area">
+                <h1 class="logo">OwnerCode</h1>
+                <div class="sub-category">
+                    <a href="#">메뉴 1</a>
+                    <a href="#">메뉴 2</a>
+                    <a href="#">메뉴 3</a>
+                    <a href="#">메뉴 4</a>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="active"><i class="icon">🏠</i> 메인화면</a></li>
+                    <li><a href="#"><i class="icon">🍔</i> 음식점</a></li>
+                    <li><a href="#"><i class="icon">📍</i> 동네 느낌</a></li>
+                    <li><a href="#"><i class="icon">🚫</i> 블랙리스트</a></li>
+                </ul>
+            </nav>
+
+            <div class="warning-box">
+                <p class="warning-title">나의 경고 현황</p>
+                <div class="warning-count">누적: <span>0</span> / 3</div>
+                <p class="warning-desc">금지 키워드 사용 시 누적됩니다.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <section class="recommend-section">
+                <h2 class="section-title">OwnerCode 추천 콘텐츠 ✨</h2>
+                <div class="recommend-grid">
+                    <div class="recommend-card">추천 음식점</div>
+                    <div class="recommend-card">데이트 장소</div>
+                    <div class="recommend-card">조회수 급상승</div>
+                    <div class="recommend-card">오늘의 노하우</div>
+                </div>
+            </section>
+
+            <section class="board-section">
+                <div class="board-header">
+                    <h3>자유게시판</h3>
+                    <div class="search-bar">
+                        <input type="text" placeholder="키워드를 검색하세요">
+                        <button class="btn-write">글쓰기</button>
+                    </div>
+                </div>
+
+                <div class="post-list">
+                    <article class="post-item">
+                        <div class="post-info">
+                            <span class="badge region">서울</span>
+                            <span class="badge category">음식점</span>
+                        </div>
+                        <h4 class="post-title">요즘 <span class="highlight">임대료</span> 문제로 고민이 많습니다.</h4>
+                        <p class="post-desc">주변 상권 환경이 바뀌면서 갑자기 연락이 왔는데 어떻게 대응해야 할까요?</p>
+                        <div class="post-meta">👍 12 | 💬 5 | 조회 150</div>
+                    </article>
+
+                    <article class="post-item">
+                        <div class="post-info">
+                            <span class="badge region">경기</span>
+                            <span class="badge category">블랙리스트</span>
+                        </div>
+                        <h4 class="post-title">상습적으로 <span class="highlight-warn">환불</span> 요구하는 손님 조심하세요.</h4>
+                        <p class="post-desc">메뉴 이름까지 언급하며 트집 잡는 분인데 공유드립니다.</p>
+                        <div class="post-meta">👍 45 | 💬 20 | 조회 890</div>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
